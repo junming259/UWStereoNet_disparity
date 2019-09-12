@@ -1,6 +1,6 @@
 # UWStereoNet - Disparity Estimation Module
 ![](figures/uwstereo_disparity_arch.png)
-+ This repository contains source code for the Disparity Estimation Module for UWStereoNet developed in UWStereoNet: Unsupervised Learning for Depth Estimation and Color Correction of Underwater Stereo Imagery. During training, the model takes stereo images pairs as inputs and output both left and right disparity maps. The code is in TensorFlow.
++ This repository contains source code for the Disparity Estimation Module for UWStereoNet developed in UWStereoNet: Unsupervised Learning for Depth Estimation and Color Correction of Underwater Stereo Imagery. During training, the model takes stereo images pairs as inputs and output both left and right disparity maps. The code is tested in TensorFlow 1.11.
 
 # UWStereoNet - Color Correction Module
 
@@ -61,7 +61,7 @@ python3 inference.py \
 --right_dir data/test/right/ \
 --gpu 1
 ```
-Note: make sure the shape of input image is dividable by 32
+Note: make sure the shape of input inference image is dividable by 32
 
 
 # Citations

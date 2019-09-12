@@ -34,7 +34,7 @@ parser.add_argument("--height", type=int, default=256, help="crop images to this
 parser.add_argument("--width", type=int, default=512, help="crop images to this width")
 parser.add_argument("--max_num_disparity", type=int, default=192, help="maximum value for disparity")
 parser.add_argument("--batch_size", type=int, default=1, help="number of images in batch")
-parser.add_argument("--lr", type=float, default=0.00001, help="initial learning rate for adam")
+parser.add_argument("--lr", type=float, default=0.0001, help="initial learning rate for adam")
 parser.add_argument("--dataset", type=str, default='cityscapes', choices=["kitti", "cityscapes"])
 parser.add_argument("--gpu", type=str, default='0', help="which gpu to use")
 parser.add_argument('--is_val', dest='is_val', action='store_true', help="show validation loss")
@@ -60,7 +60,7 @@ WEIGHTS_LIST = [a.beta1, a.beta2, a.beta3, a.gamma1, a.gamma2, a.gamma3]
 os.environ['CUDA_VISIBLE_DEVICES'] = a.gpu
 
 
-def load_data(dirs, size, name='load_data'):
+def load_data(dirs, size, name='load_data'):save_
     '''
     load left image, right image and disparity map
     '''
